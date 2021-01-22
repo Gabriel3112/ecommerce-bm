@@ -1,0 +1,112 @@
+.Footer-Container{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Footer-Info-Container{
+  background-color: #e458df;
+  box-shadow: 0 0 10px 1px #000;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+.Footer-Btn-Info-Container{
+  background-color: #E6DF28;
+  padding: 0.5rem;
+  width: 150px;
+  max-height: 40px;
+  box-shadow: 0 8px 15px 1px #000;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Footer-Btn-Info-Container div{
+  margin-right: 5px;
+}
+.FlagCard-Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+}
+
+.SocialMedia-Container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+}
+.FlagCard-Container > img{
+  width: 20vw;
+}
+ p{
+   font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+
+.Background-Icon-Contact{
+  background-color: #E6DF28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+}
+
+.Background-Icon-SocialMedia{
+  background-color: #E6DF28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.Contact-Info-Container{
+  display: flex;
+  justify-content: flex-start;
+  align-content: center ;
+  margin: 10px;
+}
+.Contact-Info{
+  display: inline-block;
+  margin: 0 5px;
+}
+.Contact-Info-Container  div span{
+  margin: 0;
+  line-height: 15px;
+}
+.Contact-Info-Container  div p{
+  margin: 0;
+
+}
+
+.SocialMedia-Info-Container{
+  display: flex;
+  flex-direction: row;
+  margin: 0 5px;
+
+}
+.Footer-Btn-Info-Container > p {
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0;
+}
+
+.Button-More-Information:hover{
+
+}
+

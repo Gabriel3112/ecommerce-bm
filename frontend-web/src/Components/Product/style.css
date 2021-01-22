@@ -1,0 +1,21 @@
+.Product-Container{
+  display: block;
+  text-align: center;
+  width: 224px;
+  height: 328px;
+  padding: 25px;
+  border: 1px solid #E6DF28;
+  margin: 10px;
+  box-shadow: 0 0 5px 0.5px #7a794d;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  
+}
+
+.Product-Information-Container{
+  border-top: 1px solid #696969;
+  padding: 30px;
+  
+}
+
