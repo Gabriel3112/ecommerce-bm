@@ -1,0 +1,113 @@
+.Header-Container{
+  width: 100%;
+  background-color: #007BA7;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ font-size: 17px;
+ box-shadow: 0 2px 0 0 #007aa748;
+
+}
+
+
+.Header-Logo{
+  
+  padding: 1vw;
+}
+
+.Header-Informations{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 1vw;
+}
+
+.Header-Menu-Mobile{
+  display: none;
+  justify-items: center;
+  align-items: center;
+  width: 10%;
+  padding: 1vw;
+}
+.Header-Menu-Mobile svg{
+  margin-left: 15px;
+}
+
+
+.Header-Logo > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Playfair Display";
+  font-weight: 800;
+  margin-left: 25px;
+}
+.Header-Logo img{
+  width: 3em;
+}
+.Header-Logo span{
+  font-size: 2em;
+  color: #ffff;
+}
+
+.Header-Cart{
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  margin: 10%;
+  align-items: flex-end;
+}
+
+.Header-Profile {
+  margin-right: 40px;
+}
+.Header-Profile > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header-Profile > div svg{
+  margin: 0 5px;
+}
+
+.Header-Icon > svg{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.Header-Category{
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px){
+  .Header-Menu-Mobile{
+    display: flex;
+    
+  }
+  .Header-Logo{
+    width: 75%;
+    justify-content: center;
+    padding: 3vw;
+  }
+  .Header-Informations{
+    width: 10%;
+  }
+
+  .Header-Profile{
+    display: none;
+  }
+
+  .Header-Category{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  .Header-Container{
+    font-size: 12px;
+  }
+
+
+}

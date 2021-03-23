@@ -1,0 +1,19 @@
+.Container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  min-height: 100vh;
+}
+.header {
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  flex: 1;
+}
+
+.footer{
+  margin: 0;
+  padding: 0;
+}

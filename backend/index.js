@@ -1,27 +1,36 @@
 import express from "express";
-const app = express();
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+import ProductRouter from "./src/Routers/ProductRouter/index.js";
+import UserRouter from "./src/Routers/UserRouter/index.js";
 
 const port = process.env.PORT || 5000;
 
-import data from "./data.js";
-
-app.get("/api/products", (req, res) => {
-  res.send(data.products);
-});
-
-app.get("/api/products/:id", (req, res) => {
-  const product = data.products.find((product) => product._id == req.params.id);
-  if (product) {
-    res.send(product);
-  } else {
-    res.status(404).send({ message: "Product not found" });
+dotenv.config();
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+mongoose.connect(
+  process.env.MONGODB_URL || "mongodb://localhost/binariomimos",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
   }
-});
+);
+
+app.use("/api/products", ProductRouter);
+
+app.use("/api/users", UserRouter);
 
 app.get("/", (req, res) => {
   res.send("Server is running!");
 });
 
+app.use((err, req, res, next) => {
+  res.status(500).send({ message: err.message });
+});
 app.listen(port, () => {
   console.log(`server at http://localhost:${port}`);
 });

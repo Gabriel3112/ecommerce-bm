@@ -1,0 +1,55 @@
+.Dropdown-Container{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+}
+
+.Dropdown-Container > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.Dropdown-Container > div > svg{
+    margin: 0 5px;
+}
+
+.Dropdown-Container > ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #007BA7;
+    top: 9px;
+    margin: 0;
+    min-width:10em;
+    border-radius: 10px;
+    padding: 1em 0 0 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.Dropdown-Item-Container{
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.Dropdown-Item-Container > li > span {
+    color: #fff;
+    
+}
+
+.Dropdown-Item-Container:hover{
+    background-color: #00668b;
+}
+
+
+.Dropdown-Container:hover ul {
+    display: block;
+}

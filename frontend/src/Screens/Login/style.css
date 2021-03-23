@@ -1,0 +1,20 @@
+.login-container{
+    background-color: #fff;
+    width: 30em;
+    height: 30em;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.26);
+}
+
+.login-container h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px){
+    .login-container{
+        width: 25em;
+        height: 25em;
+    }
+}

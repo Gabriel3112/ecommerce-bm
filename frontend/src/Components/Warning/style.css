@@ -1,0 +1,17 @@
+.Warning-Container{
+    display: flex;
+    flex-flow: row;
+    background: rgba(255, 255, 0, 0.438) ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.Danger-Container{
+    display: flex;
+    flex-flow: row;
+    background: rgba(255, 0, 0, 0.438) ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

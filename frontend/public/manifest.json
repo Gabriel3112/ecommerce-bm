@@ -1,0 +1,15 @@
+{
+  "short_name": "Binário Mimos",
+  "name": "Binário Mimos",
+  "icons": [
+    {
+      "src": "Logo.ico",
+      "sizes": "256x256",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#007BA7",
+  "background_color": "#ffffff"
+}
